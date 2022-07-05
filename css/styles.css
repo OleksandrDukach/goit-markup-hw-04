@@ -1,0 +1,210 @@
+/* основной цвет фона  #E5E5E5*/
+/* вторичный цвет фона 1я страница #F5F4FA*/
+/* цвет фона шапки и футера #2F303A */
+/* цвет текста основной  #757575*/
+/* цвет текста вторичный #212121*/
+/* цвет текста шапка и футер (без почты и тел)  #FFFFFF*/
+/* цвет текста телефон и почта  rgba(255, 255, 255, 0.6)*/
+/* цвет фона при ховере  #2196F3*/
+
+/* Основные параметры */
+
+:root {
+  --primery-bgr-color: #ffffff;
+  --secondary-bgr-color: #f5f4fa;
+  --footer-bgr-color: #2f303a;
+  --primery-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --head-text-color: #ffffff;
+  --head-button-bgr-color: #2196f3;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --logo-color-sec: #000000;
+}
+
+body {
+  background-color: var(--primery-bgr-color);
+  color: var(--primery-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Стилизация лого */
+.logo {
+  color: var(--logo-color-sec);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.span {
+  color: var(--head-button-bgr-color);
+}
+
+.nav-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.head-link {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Hover nav list */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.head-link:hover,
+.head-link:focus {
+  color: var(--accent-color);
+}
+
+/* Head style */
+.head-section {
+  background-color: var(--footer-bgr-color);
+  text-align: center;
+}
+
+.head-section > .title {
+  color: var(--head-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.head-section > .head-button {
+  background: var(--head-button-bgr-color);
+  color: var(--head-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section .button {
+  background-color: var(--secondary-bgr-color);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+/* Button hover, activ */
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primery-bgr-color);
+}
+
+.section .caption {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section .title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-rarity .desc {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.desc {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team {
+  background-color: var(--secondary-bgr-color);
+}
+
+.job-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.footer {
+  background-color: var(--footer-bgr-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer > .logo.link {
+  color: var(--head-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer .list {
+  color: var(--address-color);
+  font-style: normal;
+}
+
+.footer .address {
+  color: var(--head-text-color);
+  font-style: normal;
+}
+
+.footer .list:hover,
+.footer .list:focus {
+  color: var(--accent-color);
+}
