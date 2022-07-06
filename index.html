@@ -5,9 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <!-- Normilize style start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Normalize style end -->
+    <!-- Fonts style -->
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- My style list -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -36,13 +43,13 @@
 
     <main>
         <!-- Шапка -->
-        <section class="head-section">
-            <h1 class="title">эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="head-button button">Заказать услугу</button>
+        <section class="section head-section">
+            <h1 class="head-title">эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="head-btn">Заказать услугу</button>
         </section>
 
         <!-- Особенности -->
-        <section class="section-rarity">
+        <section class="section section-rarity">
 
             <h2 class="visually-hidden">Особенности</h2>
 
@@ -104,50 +111,63 @@
         </section>
 
         <!-- Наша команда -->
-        <section class="section team">
-            <h2 class="caption">Наша команда</h2>
+        <div class="container">
+            <section class="section team">
+                <h2 class="caption">Наша команда</h2>
 
 
-            <ul class="link">
-                <li class="item link">
-                    <img src="./images/a1.jpg" alt="Photo Ihor Demyanenko - Product Designer" width="270" />
-                    <h3 class="desc">Игорь Демьяненко</h3>
-                    <p class="job-title">Product Designer</p>
-                </li>
-                <li class="item link">
-                    <img src="./images/a2.jpg" alt="Photo Frontend Developer" width="270" />
-                    <h3 class="desc">Ольга Репина</h3>
-                    <p class="job-title">Frontend Developer</p>
-                </li>
-                <li class="item link">
-                    <img src="./images/a3.jpg" alt="Photo Marketing" width="270" />
-                    <h3 class="desc">Николай Тарасов</h3>
-                    <p class="job-title">Marketing</p>
-                </li>
-                <li class="item link">
-                    <img src="./images/a4.jpg" alt="Photo UI Designer" width="270" />
-                    <h3 class="desc">Михаил Ермаков</h3>
-                    <p class="job-title">UI Designer</p>
-                </li>
+                <ul class="link team-link">
+                    <li class="item link">
+                        <div class="team-box">
+                            <img src="./images/a1.jpg" alt="Photo Ihor Demyanenko - Product Designer" width="270" />
+                            <h3 class="desc">Игорь Демьяненко</h3>
+                            <p class="job-title">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="item link">
+                        <div class="team-box">
+                            <img src="./images/a2.jpg" alt="Photo Frontend Developer" width="270" />
+                            <h3 class="desc">Ольга Репина</h3>
+                            <p class="job-title">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="item link">
+                        <div class="team-box">
+                            <img src="./images/a3.jpg" alt="Photo Marketing" width="270" />
+                            <h3 class="desc">Николай Тарасов</h3>
+                            <p class="job-title">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="item link">
+                        <div class="team-box">
+                            <img src="./images/a4.jpg" alt="Photo UI Designer" width="270" />
+                            <h3 class="desc">Михаил Ермаков</h3>
+                            <p class="job-title">UI Designer</p>
+                        </div>
+                    </li>
 
-            </ul>
-        </section>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
-        <a class="logo link" href="./index.html"><span class="span">Web</span>Studio</a>
-        <address>
-            <ul class="footer-list link">
-                <li class="item link"><a class="address list link" href="https://goo.gl/maps/hyKwJfhGdXVPFoFf8"
-                        target="_blank" rel="noreferrer noopener">г. Киев,
-                        пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="item link"><a class="list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item link"><a class="list link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </footer>
+    <div class="footer-box">
+        <footer class="footer">
+            <a class="logo link" href="./index.html"><span class="span">Web</span>Studio</a>
+            <address>
+                <ul class="footer-list link">
+                    <li class="item link"><a class="address list link" href="https://goo.gl/maps/hyKwJfhGdXVPFoFf8"
+                            target="_blank" rel="noreferrer noopener">г. Киев,
+                            пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="item link"><a class="list link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="item link"><a class="list link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </footer>
+    </div>
 </body>
 
 </html>
