@@ -9,6 +9,10 @@
 
 /* Основные параметры */
 
+/* * {
+  outline: 2px solid tomato;
+} */
+
 :root {
   --primery-bgr-color: #ffffff;
   --secondary-bgr-color: #f5f4fa;
@@ -208,3 +212,5 @@ body {
 .footer .list:focus {
   color: var(--accent-color);
 }
+
+/* Стилізація 06.07.22 */
