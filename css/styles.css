@@ -11,6 +11,7 @@
   --logo-color-sec: #000000;
   --hover-btn-color: #188ce8;
   --border-color: #eeeeee;
+  --head-border-line: #ececec;
 }
 
 body {
@@ -71,7 +72,7 @@ address {
 /* All navigation */
 
 .header-page-nav {
-  border-bottom: solid 1px var(--light-grey-color);
+  border-bottom: solid 1px var(--head-border-line);
 }
 .master-menu-nav {
   display: flex;
@@ -136,7 +137,6 @@ address {
 }
 
 .page-header-contacts {
-  color: var(--primery-text-color);
   display: flex;
   margin-left: auto;
 }
