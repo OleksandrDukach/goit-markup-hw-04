@@ -144,6 +144,7 @@ address {
 .page-header-contact {
   color: var(--primery-text-color);
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration-line: none;
@@ -439,9 +440,6 @@ address {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  padding-bottom: 0;
-  display: inline-flex;
-  align-items: center;
   fill: currentColor;
 }
 
@@ -449,8 +447,6 @@ address {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
   fill: currentColor;
 }
 
@@ -503,33 +499,56 @@ address {
 
 /* ============LOGO PHOTO */
 
-.icons-socials {
+.icons-social {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding-bottom: 30px;
   fill: currentColor;
 }
 
 .icon-panel {
-  fill: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-panel-logo {
+  display: flex;
+  fill: var(--primery-text-color);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-panel:hover {
+  background-color: var(--accent-color);
 }
 
 .icon-panel-logo:hover,
 .icon-panel-logo:focus {
-  fill: var(--accent-color);
+  fill: var(--head-text-color);
 }
 
 /* ==========Footer slogan with icons */
 
 .footer {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: center;
 }
 
-.footer-icons {
-  display: inline-block;
-  align-items: baseline;
+.footer-box {
+  align-items: center;
+  max-width: 600px;
+  padding-right: 70px;
+  margin: 0;
 }
 
 .footer-slogan {
@@ -541,6 +560,7 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   display: inline-flex;
+  align-items: baseline;
 }
 
 .footer-icon-list {
